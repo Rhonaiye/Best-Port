@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  input:focus, textarea:focus {
+    
+    transform: none;
+      transition: none;
+    outline: none; 
+  }
+}
