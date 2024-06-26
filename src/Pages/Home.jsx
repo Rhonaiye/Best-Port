@@ -2,7 +2,9 @@ import About from "./About"
 import Contact from "./Contact"
 import Footer from "./Footer"
 import Header from "./Header"
-import Herosection from "./HeroSection"
+import Info from "./Info"
+
+
 import Projects from "./Projects"
 import Services from "./Services"
 import Testimoniials from "./Testimonials"
@@ -12,7 +14,7 @@ const Home = ()=>{
   return(
     <>
     <Header/>
-    <Herosection/>
+     <Info/>
     <About/>
     <Services/>
     <Testimoniials/>

@@ -5,6 +5,11 @@
 @layer components{
   body{
    font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Remove the transformation causing the tilt */
+body {
+  transform: none; /* or rotateX(0deg) */
+}
+
   }
   input:focus, textarea:focus {
     

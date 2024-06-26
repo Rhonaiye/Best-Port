@@ -14,7 +14,7 @@ class About extends Component{
     
       return(
         <div   className="bg-pastelBlue px-10 py-10 ">
-           <p className="text-4xl font-bold text-black text-center" data-aos='fade-left' data-aos-duration='1000' data-aos-delay='200'>About Me</p>
+           <p className="text-4xl font-bold text-black text-center" >About Me</p>
            <div className="flex flex-col items-center  text-slateGray md:flex-row"  data-aos='fade-up' data-aos-duration='1000' data-aos-delay='200'>
                
                  <div className="md:w-1/2"></div>

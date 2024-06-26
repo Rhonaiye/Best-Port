@@ -8,7 +8,7 @@ import Aos from "aos"
 import 'aos/dist/aos.css'
 import { render } from "react-dom"
 
-class Herosection extends Component{
+class Info extends Component{
   componentDidMount(){
     Aos.init();
   }
@@ -52,8 +52,6 @@ class Herosection extends Component{
     )
   }
 }
+export default Info
 
 
-
-
-export default Herosection
