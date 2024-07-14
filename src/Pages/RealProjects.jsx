@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import netImage from "/Users/mac/Desktop/Best-Port/src/assets/net1.png"
+import netImage from "/Users/mac/Desktop/Naxtech/Best-Port/src/assets/net1.png"
 
 import React, {Component} from "react"
 import Aos from "aos"
