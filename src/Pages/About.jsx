@@ -47,8 +47,8 @@ class About extends Component{
     
                     <div className="flex gap-x-5">
                       <p>MERN |</p>
-                      <p>PHP |</p>
-                      <p>VITE.</p>
+                      <p>NODE.JS|</p>
+                      <p>NEXT.JS</p>
                     </div>
                  </div>
                  </div>
