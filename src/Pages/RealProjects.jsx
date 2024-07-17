@@ -21,14 +21,14 @@ class RealProjects extends Component{
 
          <div className="flex justify-center mt-4 gap-6 flex-col md:flex-row px-4 md:px-0 py-6">
 
-         <div className=" p-20 rounded-xl flex flex-col items-center bg-black gap-3" data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'>
+         <div className=" p-20 rounded-xl flex flex-col items-center bg-black gap-3" data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='300'>
            <img src={net} alt="net" className="w-14 "/>
            <p className="text-center font-bold ">Netflix Clone</p>
            <p className="text-sm text-slateGray"> HTML, CSS & JAVASCRIPT</p>
            <Link to="https://old-netflix-clone.vercel.app/"><p className="text-pastelBlue font-extralight">Explore &rarr;</p></Link>
         </div>
 
-          <div className="p-20 rounded-xl flex flex-col items-center bg-black gap-3 md:gap-0 " data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'>
+          <div className="p-20 rounded-xl flex flex-col items-center bg-black gap-3 md:gap-0 " data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='300'>
            <p>Single page application</p>
            <p className="text-sm text-slateGray"> Next.js & TailwindCss</p>
            <Link to="https://naxaaatech.vercel.app/"><p className="text-pastelBlue">Explore &rarr;</p></Link>

@@ -18,7 +18,7 @@ class Testimoniials extends Component{
         </div>
 
       <div className="flex flex-col items-center md:flex-row md:gap-x-5 md:justify-center"  >
-            <div className="bg-pastelBlue px-10 text-center text-slateGray py-2 mt-5 rounded-md" data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'>
+            <div className="bg-pastelBlue px-10 text-center text-slateGray py-2 mt-5 rounded-md" data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='300'>
                <p className="font-bold text-2xl">95%</p>
                <p className="font-extralight">Happy Clients</p>
             </div>
@@ -28,7 +28,7 @@ class Testimoniials extends Component{
                <p className="font-extralight">Job Completion</p>
             </div>
 
-            <div className="bg-pastelBlue px-10 text-center text-slateGray py-2 mt-5 rounded-md" data-aos='fade-left' data-aos-duration='1000' data-aos-delay='100'>
+            <div className="bg-pastelBlue px-10 text-center text-slateGray py-2 mt-5 rounded-md" data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='100'>
                <p className="font-bold text-2xl">98%</p>
                <p className="">On Time</p>
             </div> 
