@@ -70,7 +70,7 @@ const squareData = [
   },
   {
     id: 2,
-    src: "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: "https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 3,
