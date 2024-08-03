@@ -7,6 +7,7 @@ import React, {Component} from "react"
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import { render } from "react-dom"
+import design from "/public/design.jpg"
 
 
  
@@ -65,7 +66,7 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: "src/assets/codes.png",
+    src: "/public/design.jpg"
   },
   {
     id: 2,
@@ -81,7 +82,7 @@ const squareData = [
   },
   {
     id: 5,
-    src: "src/assets/design.avif",
+    src: "/images/design.avif",
   },
   {
     id: 6,
@@ -93,14 +94,10 @@ const squareData = [
   },
   {
     id: 8,
-    src: "src/assets/growth.avif",
-  },
-  {
-    id: 9,
     src: "src/assets/code3.avif",
   },
   {
-    id: 10,
+    id: 9,
     src: "src/assets/metrics.avif",
   },
   
