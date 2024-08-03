@@ -8,6 +8,7 @@ import Info from "./Info"
 import Projects from "./Projects"
 import RealProjects from "./RealProjects"
 import Services from "./Services"
+import Tech from "./Tech"
 import Testimoniials from "./Testimonials"
 
 
@@ -17,6 +18,7 @@ const Home = ()=>{
     <Header/>
      <Info/>
     <About/>
+    <Tech/>
     <Services/>
     <Testimoniials/>
     <Projects/>

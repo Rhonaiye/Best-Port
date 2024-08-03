@@ -2,11 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Home from './Pages/Home'
-import RockPaperGame from './Pages/RPG'
-import Quote from './Pages/Quote'
-import Task from './Pages/Todo'
-import Blog from './Pages/Blog'
+import Home from './Components/Home'
+import RockPaperGame from './Components/RPG'
+import Quote from './Components/Quote'
+import Task from './Components/Todo'
+import Blog from './Components/Blog'
 
 
 

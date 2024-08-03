@@ -7,7 +7,7 @@ const Footer = ()=>{
   return(
     <div>
        
-       <div className="bg-slateGray text-pastelBlue p-5 py-10 flex flex-col">
+       <div className="bg-slateGray text-pastelBlue p-5 py-10 flex flex-col mt-2">
           <div className="flex flex-col font-extralight">
            <p>Say Hello</p>
            <hr className="w-[20vh] mb-4"/>
