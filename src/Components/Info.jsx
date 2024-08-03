@@ -86,7 +86,7 @@ const squareData = [
   },
   {
     id: 6,
-    src: "src/assets/design2.webp",
+    src: "https://images.unsplash.com/file-1719664968387-83d5a3f4d758image?dpr=2&w=416&auto=format&fit=crop&q=60",
   },
   {
     id: 7,
