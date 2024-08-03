@@ -6,73 +6,79 @@ import { FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
 const Tech = () => {
   return (
-    <div className="py-24">
-         <p className="text-black font-extrabold text-3xl text-center">TECHNOLOGIES I USE</p>
-    <section className="flex md:h-72 flex-col items-center justify-center gap-12 py-24 md:flex-row ">
+    <div className="py-10">
+         <p className="text-black font-extrabold text-3xl text-center ">TECHNOLOGIES I USE</p>
+  <div className="md:py-24">
+  <section className="flex md:h-72 flex-col items-center justify-center gap-2  py-24 md:flex-row ">
     
        
-      <LogoRolodex
-        items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            <FaHtml5/>
-          </LogoItem>,
-
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
-            <FaCss3Alt/>
-          </LogoItem>,
-          
-        ]}
-      />
-
-     <LogoRolodex
-        items={[
-            <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiJavascript/>
-          </LogoItem>,
-
-          <LogoItem key={4} className="bg-white text-black">
-           <SiTailwindcss/>
-          </LogoItem>,
-        ]}
-      />
-
+    <div className="flex flex-col md:flex-col gap-4 lg:flex-row">
     <LogoRolodex
-        items={[
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiReact/>
-          </LogoItem>,
+       items={[
+         <LogoItem key={1} className="bg-orange-300 text-neutral-900">
+           <FaHtml5/>
+         </LogoItem>,
 
-          <LogoItem key={4} className="bg-white text-black">
-            <SiFirebase/>
-          </LogoItem>,
-
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiFirebase/>
-          </LogoItem>,
-        ]}
-      />
-
-    <LogoRolodex
-        items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            < SiNextdotjs/>
-          </LogoItem>,
-
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
-            <SiMongodb />
-          </LogoItem>,
-
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiExpress/>
-          </LogoItem>,
-
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-          <SiNodedotjs/>
-        </LogoItem>,
+         <LogoItem key={2} className="bg-green-300 text-neutral-900">
+           <FaCss3Alt/>
+         </LogoItem>,
          
-        ]}
-      />
-    </section>
+       ]}
+     />
+
+    <LogoRolodex
+       items={[
+           <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+           <SiJavascript/>
+         </LogoItem>,
+
+         <LogoItem key={4} className="bg-white text-black">
+          <SiTailwindcss/>
+         </LogoItem>,
+       ]}
+     />
+    </div>
+
+           <div className="flex flex-col md:flex-col gap-4 lg:flex-row">
+           <LogoRolodex
+       items={[
+         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+           <SiReact/>
+         </LogoItem>,
+
+         <LogoItem key={4} className="bg-white text-black">
+           <SiFirebase/>
+         </LogoItem>,
+
+         <LogoItem key={5} className="bg-purple-300 text-neutral-900">
+           <SiFirebase/>
+         </LogoItem>,
+       ]}
+     />
+
+   <LogoRolodex
+       items={[
+         <LogoItem key={1} className="bg-orange-300 text-neutral-900">
+           < SiNextdotjs/>
+         </LogoItem>,
+
+         <LogoItem key={2} className="bg-green-300 text-neutral-900">
+           <SiMongodb />
+         </LogoItem>,
+
+         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+           <SiExpress/>
+         </LogoItem>,
+
+         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+         <SiNodedotjs/>
+       </LogoItem>,
+        
+       ]}
+     />
+           </div>
+   </section>
+  </div>
     </div>
   );
 };

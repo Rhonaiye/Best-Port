@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
    <div className="md:px-3">
-     <section className="grid place-content-center gap-2 bg-blue-950 px-8 py-24 text-black rounded-[20px]">
+     <section className="grid place-content-center gap-2 bg-blue-950 px-8 py-24 text-black md:rounded-[20px]">
       <p>Contact me on:</p>
       <FlipLink href="https://x.com/naiye_20">Twitter</FlipLink>
       <FlipLink href="https://www.linkedin.com/in/rhonaiye-felix-a0b579228/">Linkedin</FlipLink>
