@@ -14,7 +14,7 @@ class About extends Component{
     
       return(
         <div className="md:px-4">
-          <div   className="bg-indigo-500 px-10 py-10 md:py-20 text-white rounded-[20px]">
+          <div   className="bg-blue-300 px-10 py-10 md:py-20 text-white rounded-[20px]">
         
         <div className="flex flex-col items-center  text-slateGray md:flex-row"  data-aos='fade-up' data-aos-duration='1000' data-aos-delay='200'>
             

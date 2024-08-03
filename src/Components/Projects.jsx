@@ -19,7 +19,7 @@ class Projects extends Component{
     
   return(
    <div className="md:px-3">
-     <div className="py-6 bg-indigo-500 rounded-[20px] md:py-20" >
+     <div className="py-6 bg-blue-300 rounded-[20px] md:py-20" >
 
      <div className="text-center font-extrabold text-2xl  text-black">
        <p className="text-black text-3xl">Add-ons For Your Custom Website</p>
