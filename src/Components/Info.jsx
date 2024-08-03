@@ -66,7 +66,7 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: "/public/design.jpg"
+    src: "https://plus.unsplash.com/premium_vector-1682310922955-ea5e6f791471?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     id: 2,
@@ -82,7 +82,7 @@ const squareData = [
   },
   {
     id: 5,
-    src: "/images/design.avif",
+    src: "https://plus.unsplash.com/premium_photo-1670958553973-58e2ef388f91?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVuY2lsfGVufDB8fDB8fHww",
   },
   {
     id: 6,
@@ -90,15 +90,15 @@ const squareData = [
   },
   {
     id: 7,
-    src: "src/assets/secure.avif",
+    src: "https://plus.unsplash.com/premium_vector-1682269498466-be10e63aaa8a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 8,
-    src: "src/assets/code3.avif",
+    src: "https://plus.unsplash.com/premium_vector-1712161707724-52d6d007b608?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 9,
-    src: "src/assets/metrics.avif",
+    src: "https://plus.unsplash.com/premium_vector-1682310920702-50669014da8f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D",
   },
   
   
