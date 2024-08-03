@@ -28,7 +28,7 @@ const Info = () => {
           <span className="text-indigo-500">Visually appealing</span> and
           attention to detail.
         </p>
-        
+
         <a href="public/naiye.pdf" download="Rhonaiye_cv.pdf">
         <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
@@ -77,7 +77,7 @@ const squareData = [
   },
   {
     id: 4,
-    src: "src/assets/design.jpg",
+    src: "public/design.jpg",
   },
   {
     id: 5,
