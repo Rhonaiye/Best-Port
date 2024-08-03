@@ -70,15 +70,15 @@ const squareData = [
   },
   {
     id: 2,
-    src: "src/assets/codes2.jpg",
+    src: "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 3,
-    src: "src/assets/pen.jpg",
+    src: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 4,
-    src: "public/design.jpg",
+    src: "https://images.pexels.com/photos/11813187/pexels-photo-11813187.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 5,
