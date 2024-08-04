@@ -11,7 +11,7 @@ class Testimoniials extends Component{
    render(){
    
   return(
-   <div className="bg-softWhite text-indigo-500 py-10 ">
+   <div className="bg-softWhite text-blue-500 py-10 ">
       
       <div className="flex justify-center " >
         <p className=" border-x-pastelBlue border-x-2 p-2 font-bold mb-5 text-blue-700" >WHY CHOOSE ME?</p>
