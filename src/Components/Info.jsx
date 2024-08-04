@@ -31,7 +31,7 @@ const Info = () => {
         </p>
 
         <a href="public/naiye.pdf" download="Rhonaiye_cv.pdf">
-        <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
+        <button className="bg-blue-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
         </button></a>
         
