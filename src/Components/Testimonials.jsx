@@ -14,7 +14,7 @@ class Testimoniials extends Component{
    <div className="bg-softWhite text-indigo-500 py-10 ">
       
       <div className="flex justify-center " >
-        <p className=" border-x-pastelBlue border-x-2 p-2 font-bold mb-5" >WHY CHOOSE ME?</p>
+        <p className=" border-x-pastelBlue border-x-2 p-2 font-bold mb-5 text-blue-700" >WHY CHOOSE ME?</p>
         </div>
 
       <div className="flex flex-col items-center md:flex-row md:gap-x-5 md:justify-center "  >

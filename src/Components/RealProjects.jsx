@@ -13,7 +13,7 @@ import net from "/src/assets/net1.png"
 
 const RealProjects = () => {
   return (
-    <div className="bg-blue-950 my-10">
+    <div className="bg-blue-900 my-10">
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-white text-3xl">
           RECENT PROJECTS
@@ -100,9 +100,9 @@ const cards = [
 
   {
     url: "",
-    title: "You can Make my next project yours!",
+    title: "My next project can be yours!",
     id: 3,
-    link: "https://currency-converter-bice-tau.vercel.app/"
+    
   },
   
    
