@@ -27,7 +27,7 @@ const Info = () => {
           attention to detail.
         </p>
 
-        <a href="src/assets/naiye.pdf" download="naiye.pdf">
+        <a href="/naiye.pdf" download="naiye.pdf">
         <button className="bg-blue-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
         </button></a>
