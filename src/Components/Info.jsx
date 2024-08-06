@@ -1,13 +1,10 @@
-import web from "/src/assets/web.svg"
-import globe from "/src/assets/globe.svg"
-import react from "/src/assets/react.svg"
-import rocket from "/src/assets/rocket.svg"
+
 
 import React, {Component} from "react"
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import { render } from "react-dom"
-import design from "/public/design.jpg"
+
 
 
  
@@ -30,7 +27,7 @@ const Info = () => {
           attention to detail.
         </p>
 
-        <a href="public/naiye.pdf" download="Rhonaiye_cv.pdf">
+        <a href="src/assets/naiye.pdf" download="Rhonaiye_cv.pdf">
         <button className="bg-blue-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
         </button></a>
