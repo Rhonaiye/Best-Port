@@ -15,7 +15,7 @@ const RealProjects = () => {
   return (
     <div className="bg-blue-900 my-10">
       <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-white text-3xl">
+        <span className="font-semibold uppercase text-black text-3xl">
           RECENT PROJECTS
         </span>
       </div>
