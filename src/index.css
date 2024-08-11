@@ -6,7 +6,7 @@
   body{
    font-family: Georgia, 'Times New Roman', Times, serif;
   /* Remove the transformation causing the tilt */
-    background-color: #c8c8c857;
+    background-color: #ddd6fe;
 
   }
   input:focus, textarea:focus {

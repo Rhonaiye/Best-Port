@@ -13,9 +13,9 @@ import net from "/src/assets/net1.png"
 
 const RealProjects = () => {
   return (
-    <div className="bg-blue-900 my-10">
+    <div className="bg-blue-950 my-10">
       <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-black text-3xl">
+        <span className="font-semibold uppercase text-violet-300 text-3xl">
           RECENT PROJECTS
         </span>
       </div>
@@ -66,7 +66,7 @@ const Card = ({ card }) => {
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
         <Link to={card.link} className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-4xl font-black uppercase text-white backdrop-blur-lg text-center">
-          {card.title}
+          <p className="text-violet-300">{card.title}</p>
         </Link>
         
       </div> 

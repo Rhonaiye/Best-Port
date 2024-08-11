@@ -13,9 +13,10 @@ import { useEffect, useRef, useState } from "react";
 
 const Info = () => {
   return (
-    <section className="w-full px-8 py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
+    
+      <section className="w-full  py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto  bg-violet-200 rounded-xl md:px-10 px-5">
       <div className="order-last md:order-first">
-        <span className="block mb-4 text-xs md:text-sm text-blue-500 font-medium">
+        <span className="block mb-4 text-xs md:text-sm text-violet-600 font-medium">
           Hi, I'm
         </span>
         <h3 className="text-4xl md:text-6xl font-semibold">
@@ -23,12 +24,12 @@ const Info = () => {
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
           My approach to Web development is simple: Create with purpose,{" "}
-          <span className="text-blue-500">Visually appealing</span> and
+          <span className="text-violet-600">Visually appealing</span> and
           attention to detail.
         </p>
 
         <a href="/naiye.pdf" download="naiye.pdf">
-        <button className="bg-blue-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
+        <button className="bg-violet-600 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
         </button></a>
         
@@ -37,6 +38,7 @@ const Info = () => {
         <ShuffleGrid />
       </div>
     </section>
+    
   );
 };
 
