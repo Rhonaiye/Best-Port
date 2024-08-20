@@ -20,7 +20,7 @@ const Info = () => {
           Hi, I'm
         </span>
         <h3 className="text-4xl md:text-6xl font-semibold">
-          olushola
+          Rhonaiye Felix
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
           My approach to Web development is simple: Create with purpose,{" "}
