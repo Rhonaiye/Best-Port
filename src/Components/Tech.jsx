@@ -7,7 +7,7 @@ import { FaHtml5, FaCss3Alt } from 'react-icons/fa';
 const Tech = () => {
   return (
     <div className="py-10">
-         <p className="text-black font-extrabold text-3xl text-center ">TECHNOLOGIES I USE</p>
+         <p className="text-white font-extrabold text-3xl text-center ">TECHNOLOGIES I USE</p>
   <div className="md:py-24">
   <section className="flex md:h-72 flex-col items-center justify-center gap-2  py-24 md:flex-row ">
     

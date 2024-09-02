@@ -3,6 +3,7 @@ import Contact from "./Contact"
 import Footer from "./Footer"
 import Header from "./Header"
 import Info from "./Info"
+import Journey from "./Journey"
 
 
 import Projects from "./Projects"
@@ -18,6 +19,7 @@ const Home = ()=>{
     <Header/>
      <Info/>
     <About/>
+    <Journey/>
     <Tech/>
     <Services/>
     <Testimoniials/>
@@ -25,6 +27,7 @@ const Home = ()=>{
     <RealProjects/>
     <Contact/>
     <Footer/>
+    
     
     
     </>

@@ -4,9 +4,9 @@
 
 @layer components{
   body{
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* Remove the transformation causing the tilt */
-    background-color: #ddd6fe;
+    background-color: #172554;
 
   }
   input:focus, textarea:focus {
