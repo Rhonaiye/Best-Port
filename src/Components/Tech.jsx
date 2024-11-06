@@ -1,177 +1,121 @@
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { SiJavascript, SiTailwindcss, SiReact, SiFirebase, SiMongodb, SiExpress,  SiNextdotjs, SiFramer, SiNodedotjs } from "react-icons/si";
-import { twMerge } from "tailwind-merge";
+import React from "react";
+import { motion } from "framer-motion";
+import { 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiReact, 
+  SiFirebase, 
+  SiMongodb, 
+  SiExpress, 
+  SiNextdotjs, 
+  SiFramer, 
+  SiNodedotjs,
+  SiPython,
+  SiDjango,
+  SiFastapi,
+  SiGithub,
+  SiGit
+} from "react-icons/si";
 import { FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
+const techStack = {
+  "Frontend": [
+    { icon: <FaHtml5 className="text-orange-500" />, name: "HTML5" },
+    { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
+    { icon: <SiJavascript className="text-yellow-500" />, name: "JavaScript" },
+    { icon: <SiTailwindcss className="text-blue-400" />, name: "Tailwind CSS" },
+    { icon: <SiReact className="text-blue-600" />, name: "React" },
+    { icon: <SiNextdotjs className="text-black dark:text-white" />, name: "Next.js" },
+    { icon: <SiFramer className="text-purple-500" />, name: "Framer Motion" },
+  ],
+  "Backend": [
+    { icon: <SiPython className="text-blue-500" />, name: "Python" },
+    { icon: <SiDjango className="text-green-700" />, name: "Django" },
+    { icon: <SiNodedotjs className="text-green-600" />, name: "Node.js" },
+    { icon: <SiExpress className="text-gray-500" />, name: "Express" },
+    { icon: <SiFastapi className="text-teal-500" />, name: "FastAPI" },
+  ],
+  "Database & Tools": [
+    { icon: <SiFirebase className="text-yellow-600" />, name: "Firebase" },
+    { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
+    { icon: <SiGit className="text-red-500" />, name: "Git" },
+    { icon: <SiGithub className="text-gray-800 dark:text-white" />, name: "GitHub" },
+  ]
+};
+
 const Tech = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+
   return (
-    <div className="py-10">
-         <p className="text-white font-extrabold text-3xl text-center ">TECHNOLOGIES I USE</p>
-  <div className="md:py-24">
-  <section className="flex md:h-72 flex-col items-center justify-center gap-2  py-24 md:flex-row ">
-    
-       
-    <div className="flex flex-col md:flex-col gap-4 lg:flex-row">
-    <LogoRolodex
-       items={[
-         <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-           <FaHtml5/>
-         </LogoItem>,
+    <div className="py-16 px-5 lg:px-16">
+      <motion.h2 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-5xl font-bold text-center mb-20 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent "
+      >
+        Technologies I Use
+      </motion.h2>
 
-         <LogoItem key={2} className="bg-green-300 text-neutral-900">
-           <FaCss3Alt/>
-         </LogoItem>,
-         
-       ]}
-     />
+      {Object.entries(techStack).map(([category, technologies]) => (
+        <div key={category} className="mb-16">
+          <motion.h3 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-2xl font-semibold mb-8 text-blue-300"
+          >
+            {category}
+          </motion.h3>
 
-    <LogoRolodex
-       items={[
-           <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-           <SiJavascript/>
-         </LogoItem>,
-
-         <LogoItem key={4} className="bg-white text-black">
-          <SiTailwindcss/>
-         </LogoItem>,
-       ]}
-     />
-    </div>
-
-           <div className="flex flex-col md:flex-col gap-4 lg:flex-row">
-           <LogoRolodex
-       items={[
-         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-           <SiReact/>
-         </LogoItem>,
-
-         <LogoItem key={4} className="bg-white text-black">
-           <SiFirebase/>
-         </LogoItem>,
-
-         <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-           <SiFirebase/>
-         </LogoItem>,
-       ]}
-     />
-
-   <LogoRolodex
-       items={[
-         <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-           < SiNextdotjs/>
-         </LogoItem>,
-
-         <LogoItem key={2} className="bg-green-300 text-neutral-900">
-           <SiMongodb />
-         </LogoItem>,
-
-         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-           <SiExpress/>
-         </LogoItem>,
-
-         <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-         <SiNodedotjs/>
-       </LogoItem>,
-        
-       ]}
-     />
-           </div>
-   </section>
-  </div>
+          <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 "
+          >
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.1,
+                  transition: { type: "spring", stiffness: 300 }
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              >
+                <motion.div 
+                  className="text-5xl mb-4"
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  {tech.icon}
+                </motion.div>
+                <p className="text-md font-extralight text-blue-300">
+                  {tech.name}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      ))}
     </div>
   );
 };
 
-const DELAY_IN_MS = 2500;
-const TRANSITION_DURATION_IN_SECS = 1.5;
-
-const LogoRolodex = ({ items }) => {
-  const intervalRef = useRef(null);
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setIndex((pv) => pv + 1);
-    }, DELAY_IN_MS);
-
-    return () => {
-      clearInterval(intervalRef.current || undefined);
-    };
-  }, []);
-
-  return (
-    <div
-      style={{
-        transform: "rotateY(-20deg)",
-        transformStyle: "preserve-3d",
-      }}
-      className="relative z-0 h-44 w-60 shrink-0 rounded-xl border border-neutral-700 bg-neutral-800"
-    >
-      <AnimatePresence mode="sync">
-        <motion.div
-          style={{
-            y: "-50%",
-            x: "-50%",
-            clipPath: "polygon(0 0, 100% 0, 100% 50%, 0 50%)",
-            zIndex: -index,
-            backfaceVisibility: "hidden",
-          }}
-          key={index}
-          transition={{
-            duration: TRANSITION_DURATION_IN_SECS,
-            ease: "easeInOut",
-          }}
-          initial={{ rotateX: "0deg" }}
-          animate={{ rotateX: "0deg" }}
-          exit={{ rotateX: "-180deg" }}
-          className="absolute left-1/2 top-1/2"
-        >
-          {items[index % items.length]}
-        </motion.div>
-        <motion.div
-          style={{
-            y: "-50%",
-            x: "-50%",
-            clipPath: "polygon(0 50%, 100% 50%, 100% 100%, 0 100%)",
-            zIndex: index,
-            backfaceVisibility: "hidden",
-          }}
-          key={(index + 1) * 2}
-          initial={{ rotateX: "180deg" }}
-          animate={{ rotateX: "0deg" }}
-          exit={{ rotateX: "0deg" }}
-          transition={{
-            duration: TRANSITION_DURATION_IN_SECS,
-            ease: "easeInOut",
-          }}
-          className="absolute left-1/2 top-1/2"
-        >
-          {items[index % items.length]}
-        </motion.div>
-      </AnimatePresence>
-
-      <hr
-        style={{
-          transform: "translateZ(1px)",
-        }}
-        className="absolute left-0 right-0 top-1/2 z-[999999999] -translate-y-1/2 border-t-[0.3px] border-neutral-800"
-      />
-    </div>
-  );
-};
-
-const LogoItem = ({ children, className }) => {
-  return (
-    <div
-      className={twMerge(
-        "grid h-36 w-52 place-content-center rounded-lg bg-neutral-700 text-6xl text-neutral-50",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
-
-export default Tech
+export default Tech;

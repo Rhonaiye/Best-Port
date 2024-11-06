@@ -4,9 +4,9 @@
 
 @layer components{
   body{
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   /* Remove the transformation causing the tilt */
-    background-color: #172554;
+    background-color: #080e22;
 
   }
   input:focus, textarea:focus {
@@ -15,4 +15,10 @@
       transition: none;
     outline: none; 
   }
+}
+
+
+/* Targeting Ant Design timeline line */
+.ant-timeline .ant-timeline-item-tail {
+  background-color: #172e4b;
 }

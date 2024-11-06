@@ -14,7 +14,7 @@ import { useEffect, useRef, useState } from "react";
 const Info = () => {
   return (
     
-      <section className="w-full  py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto  bg-blue-950 rounded-xl md:px-10 px-5">
+      <section className="w-full  py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto  bg-blue-[#080F22] rounded-xl md:px-10 px-5">
       <div className="order-last md:order-first">
         <span className="block mb-4 text-xs md:text-sm text-blue-400  font-bold">
           Hi, I'm
@@ -28,7 +28,7 @@ const Info = () => {
           attention to detail.
         </p>
 
-        <a href="/naiye.pdf" download="naiye.pdf">
+        <a href="/naiye.pdf" download="design.jpg">
         <button className="bg-blue-400 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Download cv
         </button></a>

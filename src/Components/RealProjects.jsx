@@ -1,50 +1,30 @@
-import { Link } from "react-router-dom"
-
-
-
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
-
-import React, {Component} from "react"
-import Aos from "aos"
-import 'aos/dist/aos.css'
-import { render } from "react-dom"
-import net from "/src/assets/net1.png"
+import React, { useRef } from 'react';
 
 const RealProjects = () => {
   return (
-    <div className="bg-blue-950 my-10">
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-white text-3xl">
-          RECENT PROJECTS
-        </span>
+    <div className="bg-gradient-to-b from-blue-950 to-black py-20">
+      <div className="flex flex-col items-center justify-center space-y-4 mb-12">
+        <h2 className="font-bold text-4xl text-white tracking-wider">
+          Recent Projects
+        </h2>
+        <div className="w-24 h-1 bg-violet-500 rounded-full"></div>
       </div>
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-white">
-          Scroll up
-        </span>
-      </div>
     </div>
   );
 };
 
 const HorizontalScrollCarousel = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const carouselRef = useRef(null);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </motion.div>
+    <section className="relative h-[60vh] mb-[20vh]">
+      <div className="overflow-x-auto flex justify-start px-4 py-8">
+        <div ref={carouselRef} className="flex gap-8">
+          {cards.map((card) => (
+            <Card key={card.id} card={card} />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -52,64 +32,65 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div
-      key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-blue-950 rounded-xl"
-    >
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-      ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <Link to={card.link} className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-4xl font-black uppercase text-white backdrop-blur-lg text-center">
-          <p className="text-violet-300">{card.title}</p>
-        </Link>
+    <div className="relative w-[350px] h-[400px] rounded-2xl overflow-hidden bg-gradient-to-br from-violet-600/20 to-blue-900/30">
+      <div className="absolute inset-0 flex flex-col justify-between p-6">
+        <div className="w-full flex justify-end">
+          {card.link && (
+            <div className="bg-white/10 backdrop-blur-md rounded-full p-2">
+              <a
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-violet-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            </div>
+          )}
+        </div>
         
-      </div> 
-
-      
+        <div className="space-y-4">
+          <h3 className="text-2xl font-bold text-white">{card.title}</h3>
+          <div className="h-0.5 bg-gradient-to-r from-violet-500 to-transparent"></div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default RealProjects
-
 const cards = [
   {
-    url: "",
     title: "Netflix Clone",
     id: 1,
     link: "https://old-netflix-clone.vercel.app/",
   },
   {
-    url: "",
     title: "Company SPA",
     id: 2,
     link: "https://naxtech-h6pid19p6-rhonaiyes-projects.vercel.app/"
   },
   {
-    url: "",
     title: "Currency Converter",
     id: 3,
     link: "https://currency-converter-bice-tau.vercel.app/"
   },
-
   {
-    url: "",
-    title: "My next project can be yours!",
-    id: 3,
-    
-  },
-  
-   
- 
+    title: "Your Project Next?",
+    id: 4
+  }
 ];
- 
 
-
-
-
+export default RealProjects;

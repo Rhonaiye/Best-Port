@@ -5,12 +5,9 @@ import Header from "./Header"
 import Info from "./Info"
 import Journey from "./Journey"
 
-
-import Projects from "./Projects"
-import RealProjects from "./RealProjects"
-import Services from "./Services"
+import ServicesComp from "./servicesComp"
 import Tech from "./Tech"
-import Testimoniials from "./Testimonials"
+import RealProjects from "./RealProjects"
 
 
 const Home = ()=>{
@@ -21,9 +18,7 @@ const Home = ()=>{
     <About/>
     <Journey/>
     <Tech/>
-    <Services/>
-    <Testimoniials/>
-    <Projects/>
+    <ServicesComp/>
     <RealProjects/>
     <Contact/>
     <Footer/>
