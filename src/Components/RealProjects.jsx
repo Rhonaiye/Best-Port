@@ -83,9 +83,9 @@ const cards = [
     link: "https://naxtech-h6pid19p6-rhonaiyes-projects.vercel.app/"
   },
   {
-    title: "Currency Converter",
+    title: "Sasta Ecommerce store",
     id: 3,
-    link: "https://currency-converter-bice-tau.vercel.app/"
+    link: "https://www.sastaclothing.com.ng/"
   },
   {
     title: "Your Project Next?",
