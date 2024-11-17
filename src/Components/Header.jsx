@@ -31,14 +31,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button 
-              className="text-blue-400 hover:text-white p-2 rounded-lg transition-colors"
-              aria-label="Toggle menu"
-            >
-              <Menu size={24} />
-            </button>
-          </div>
+         
         </div>
       </div>
     </header>
