@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Remove the transformation causing the tilt */
+    background-color: #080e22;
+
+  }
+  input:focus, textarea:focus {
+    
+    transform: none;
+      transition: none;
+    outline: none; 
+  }
+}
+
+
+/* Targeting Ant Design timeline line */
+.ant-timeline .ant-timeline-item-tail {
+  background-color: #172e4b;
+}
