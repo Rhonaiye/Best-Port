@@ -4,18 +4,79 @@ import { ClockCircleOutlined } from '@ant-design/icons';
 import {FaCircleNotch} from 'react-icons/fa'
 
 const Journey = () => {
-  const journeyData = [
-    { year: "2022", technology: "HTML, CSS & JAVASCRIPT", description: "Started with the basics of web development, mastering the structure, styling and interaction of web pages." },
-    { year: "2023", technology: "React.js", description: "Learnt React.js to build dynamic  & fast single-page applications." },
-    { year: "2023", technology: "Tailwind CSS", description: "Adopted Tailwind CSS for utility-first styling and rapid UI development." },
-    { year: "2023", technology: "Firebase", description: "Integrated Firebase for real-time databases and user authentication in web apps." },
-
-    { year: "2024", technology: "Next.js", description: "Learnt Next.js for server-side rendering & building full-stack applications." },
-    { year: "2024", technology: "Node.js", description: "Learnt little about node.js but switched to python" },
-    { year: "2024", technology: "Python", description: "Expanded into Python for robust backend logic, data analysis, and general use" },
-    { year: "2024", technology: "Django", description: "Learnt Django for building full-stack native django apps" },
-    { year: "2024", technology: "Django rest Framework", description: "Learnt Django rest framework for building robust apis" },
-    { year: "2024", technology: "FastApi", description: "Learnt FastApi for building fast & robust python apps " },
+ const journeyData = [
+    {
+      year: "2021",
+      technology: "HTML, CSS & JavaScript",
+      description:
+        "Started with the basics of web development—learning structure, styling, and interactivity of web pages.",
+    },
+    {
+      year: "2021",
+      technology: "React.js",
+      description:
+        "Mastered React.js for building fast and interactive single-page applications.",
+    },
+    {
+      year: "2021",
+      technology: "Tailwind CSS",
+      description:
+        "Adopted Tailwind CSS for utility-first styling and rapid UI development.",
+    },
+    {
+      year: "2022",
+      technology: "Firebase",
+      description:
+        "Used Firebase for real-time databases, hosting, and authentication in web apps.",
+    },
+    {
+      year: "2022",
+      technology: "TypeScript",
+      description:
+        "Transitioned to TypeScript for safer, scalable, and strongly-typed frontend and backend development.",
+    },
+    {
+      year: "2022",
+      technology: "Next.js & API Routes",
+      description:
+        "Built full-stack apps using Next.js with SSR, static site generation, and backend API routes.",
+    },
+    {
+      year: "2023",
+      technology: "Node.js & Express.js",
+      description:
+        "Developed backend services and REST APIs using Node.js and Express.js.",
+    },
+    {
+      year: "2023",
+      technology: "Socket.IO",
+      description:
+        "Implemented real-time features like chat, live presence, and updates using Socket.IO.",
+    },
+    {
+      year: "2023",
+      technology: "MongoDB & PostgreSQL",
+      description:
+        "Worked with both NoSQL (MongoDB) and SQL (PostgreSQL) databases for flexible data storage.",
+    },
+    {
+      year: "2024",
+      technology: "Python",
+      description:
+        "Used Python for server-side development, automation, and scripting.",
+    },
+    {
+      year: "2024",
+      technology: "Django & Django REST Framework",
+      description:
+        "Built scalable backend systems and APIs using Django and DRF.",
+    },
+    {
+      year: "2024",
+      technology: "FastAPI",
+      description:
+        "Built high-performance APIs using FastAPI with auto-generated docs and fast async handling.",
+    },
   ];
 
   return (

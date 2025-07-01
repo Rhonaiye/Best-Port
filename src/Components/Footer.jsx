@@ -54,13 +54,7 @@ const Footer = () => {
             >
               Instagram
             </FooterLink>
-            <FooterLink 
-              href="https://twitter.com/naiye_20"
-              icon={Twitter}
-              external
-            >
-              Twitter
-            </FooterLink>
+          
           </FooterSection>
 
           {/* Links Section */}
@@ -72,13 +66,7 @@ const Footer = () => {
               <BookOpen size={16} />
               <span>Blog Posts</span>
             </Link>
-            <FooterLink 
-              href="https://rhonaiye-felix-portfolio.vercel.app/"
-              icon={ExternalLink}
-              external
-            >
-              Previous Portfolio
-            </FooterLink>
+           
           </FooterSection>
         </div>
 
