@@ -77,7 +77,7 @@ const Card = ({ card }) => (
 );
 
 const cards = [
-  { title: "Netflix Clone", id: 1, link: "https://old-netflix-clone.vercel.app/" },
+  { title: "Learn Easy", id: 1, link: "https://learn-easy-ycut.vercel.app/" },
   { title: "Company SPA", id: 2, link: "https://spa-one-nu.vercel.app/" },
   { title: "SaaS Pricing Page", id: 3, link: "https://landing-page-mu-opal.vercel.app/" },
   { title: "Your Project Next?", id: 4, link: 'https://wa.me/message/ZTMSFLMIRNXTM1' }
