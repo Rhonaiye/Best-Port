@@ -5,18 +5,7 @@ import {FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp}  from 'react-icons/fa'
 
 const Contact = () => {
   const contacts = [
-    {
-      name: 'Twitter / X',
-      href: 'https://x.com/naiye_20',
-      icon: FaTwitter,
-      color: 'hover:text-blue-400'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/rhonaiye-felix-a0b579228/',
-      icon: FaLinkedin,
-      color: 'hover:text-blue-900'
-    },
+
     {
       name: 'WhatsApp',
       href: 'https://wa.me/+2349131215984?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20opportunity',
@@ -43,7 +32,7 @@ const Contact = () => {
           Connect
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           {contacts.map((contact) => {
             const Icon = contact.icon;
             return (

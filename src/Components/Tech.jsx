@@ -14,7 +14,8 @@ import {
   SiDjango,
   SiFastapi,
   SiGithub,
-  SiGit
+  SiGit,
+  SiTypescript
 } from "react-icons/si";
 import { FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
@@ -22,7 +23,7 @@ const techStack = {
   "Frontend": [
     { icon: <FaHtml5 className="text-orange-500 font-prompt" />, name: "HTML5" },
     { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
-    { icon: <SiJavascript className="text-yellow-500" />, name: "JavaScript" },
+    { icon: < SiTypescript className="text-blue-400" />, name: " Typescript" },
     { icon: <SiTailwindcss className="text-blue-400" />, name: "Tailwind CSS" },
     { icon: <SiReact className="text-blue-600" />, name: "React & React Native" },
     { icon: <SiNextdotjs className="text-black dark:text-white" />, name: "Next.js" },
