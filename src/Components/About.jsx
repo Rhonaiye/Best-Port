@@ -18,7 +18,7 @@ const About = () => {
     { id: 3, name: "TAILWIND CSS", category: "frontend" },
     { id: 4, name: "REACT / NEXT.JS", category: "frontend" },
     { id: 5, name: "REACT NATIVE", category: "backend" },
-    { id: 6, name: "NODE.JS & JAVASCRIPT", category: "backend" },
+    { id: 6, name: "NODE.JS & TYPESCRIPT", category: "backend" },
   ];
 
   const SkillBadge = ({ skill }) => {
